@@ -92,9 +92,9 @@ function Navbar({toggle}) {
 
             <NavMenu>
 
-                <NavLink to={"o-projektu"}>O projektu</NavLink>
-                <NavLink to={"kontakt"}>Kontakt</NavLink>
-                <NavLink to={""}>Vyzkoušet nyní</NavLink>
+                <NavLink to={"/o-projektu"}>O projektu</NavLink>
+                <NavLink to={"/kontakt"}>Kontakt</NavLink>
+                <NavLink to={"/"}>Vyzkoušet nyní</NavLink>
 
             </NavMenu>
 
@@ -103,7 +103,7 @@ function Navbar({toggle}) {
                 {loggedInUser ?
 
                     (icon ?
-                        <UserProfile to={"ucet"}
+                        <UserProfile to={"/ucet"}
                         >
                             <img
                                 src={icon}
@@ -117,11 +117,11 @@ function Navbar({toggle}) {
                                 referrerPolicy="no-referrer"
                             />
                         </UserProfile> :
-                        <UserProfile style={{background: '#fc555f'}} to={"ucet"}>{firstLetter}</UserProfile>) :
+                        <UserProfile style={{background: '#fc555f'}} to={"/ucet"}>{firstLetter}</UserProfile>) :
 
                     <NavBtn>
-                        <NavLink to={"prihlaseni"}>Přihlášení</NavLink>
-                        <NavBtnLink to={"registrace"}>Registrace</NavBtnLink>
+                        <NavLink to={"/prihlaseni"}>Přihlášení</NavLink>
+                        <NavBtnLink to={"/registrace"}>Registrace</NavBtnLink>
                     </NavBtn>}
 
             </NavBtn>

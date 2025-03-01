@@ -24,14 +24,14 @@ function AnimatedRoutes(props) {
             <Routes location={location} key={location.pathname}>
 
                 <Route path="/" element={<Home setImage={setImage}/>}/>
-                <Route path="o-projektu" element={<Oprojektu />}/>
-                <Route path="kontakt" element={<Kontakt />}/>
-                <Route path="zabery" element={<Zabery image={image}/>}/>
-                <Route path="prihlaseni" element={<Login />}/>
-                <Route path="registrace" element={<SignUp />}/>
-                <Route path="zapomenute-heslo" element={<ForgotPassword />}/>
-                <Route path="zapomenute-heslo/reset" element={<ResetPassword />}/>
-                <Route path="ucet" element={<Account />}/>
+                <Route path="/o-projektu" element={<Oprojektu />}/>
+                <Route path="/kontakt" element={<Kontakt />}/>
+                <Route path="/zabery" element={<Zabery image={image}/>}/>
+                <Route path="/prihlaseni" element={<Login />}/>
+                <Route path="/registrace" element={<SignUp />}/>
+                <Route path="/zapomenute-heslo" element={<ForgotPassword />}/>
+                <Route path="/zapomenute-heslo/reset" element={<ResetPassword />}/>
+                <Route path="/ucet" element={<Account />}/>
 
             </Routes>
 
