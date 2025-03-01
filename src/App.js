@@ -14,7 +14,7 @@ function App() {
 
     return (
 
-        <Router basename="/React">
+        <Router>
 
             <Navbar toggle={toggle}/>
 

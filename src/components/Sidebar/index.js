@@ -22,7 +22,7 @@ function Sidebar({isOpen, toggle}) {
 
     const icon = data?.image;
 
-    console.log(data.username);
+    console.log(data?.username);
 
     return (
         <SidebarContainer isOpen={isOpen} onClick={toggle}>
@@ -40,6 +40,7 @@ function Sidebar({isOpen, toggle}) {
                     <SidebarLink to={"o-projektu"}>O projektu</SidebarLink>
                     <SidebarLink to={"kontakt"}>Kontakt</SidebarLink>
                     <SidebarLink to={""}>Vyzkoušet nyní</SidebarLink>
+                    <SidebarLink to={"prihlaseni"}>Přihlášení</SidebarLink>
 
                 </SidebarMenu>
 
@@ -76,7 +77,6 @@ function Sidebar({isOpen, toggle}) {
                         </SidebarBtnLink>
                     ) : (
                         <SidebarBtn>
-                            <SidebarLink to={"prihlaseni"}>Přihlášení</SidebarLink>
                             <SidebarBtnLink to={"registrace"}>Registrace</SidebarBtnLink>
                         </SidebarBtn>
                     )}
