@@ -52,7 +52,7 @@ function Login() {
 
                     // Ověření uživatele nebo jeho registrace na backendu
                     axios
-                        .post(`/auth/registerUser`, {
+                        .post(`http://localhost:4000/auth/registerUser`, {
                             username: googleData.name,
                             email: googleData.email,
                             password: '-1',

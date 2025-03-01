@@ -40,7 +40,7 @@ function Sidebar({isOpen, toggle}) {
                     <SidebarLink to={"o-projektu"}>O projektu</SidebarLink>
                     <SidebarLink to={"kontakt"}>Kontakt</SidebarLink>
                     <SidebarLink to={""}>Vyzkoušet nyní</SidebarLink>
-                    <SidebarLink to={"prihlaseni"}>Přihlášení</SidebarLink>
+                    {loggedInUser ? <SidebarLink to={""}/> : <SidebarLink to={"prihlaseni"}>Přihlášení</SidebarLink>}
 
                 </SidebarMenu>
 

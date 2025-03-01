@@ -12,7 +12,7 @@ export const AccountContainer = styled.div`
     }
 `;
 
-export const Sidebar = styled.aside`
+export const Sidebar = styled.div`
     display: flex;
     flex-direction: column;
     width: 240px;

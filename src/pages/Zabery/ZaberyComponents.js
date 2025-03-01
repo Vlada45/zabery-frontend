@@ -10,6 +10,37 @@ export const ZaberyPage = styled.div`
     padding-top: 50px;
     align-items: flex-start;
     font-size: 14px;
+
+    @media (max-width: 1400px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        text-align: center;
+        
+        * {
+            display: none;
+        }
+        
+        &::after {
+            content: "Tato stránka je momentálně ve vývoji. Brzy budete moci vytvářet záběry přímo na vašem zařízení!";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: radial-gradient(circle at top left, var(--color-blue-9) 0%, var(--color-blue-5) 10%, transparent 25%),
+            radial-gradient(circle at bottom right, var(--color-blue-9) 0%, var(--color-blue-5) 10%, transparent 25%);
+            height: 100vh;
+            width: 100vw;
+            min-height: 800px;
+            z-index: -1;
+            overflow: hidden;
+            text-align: center;
+            font-weight: 700;
+            font-size: 25px;
+            padding: 50px;
+        }
+    }
 `;
 
 
@@ -26,12 +57,8 @@ export const ZaberySidebarContainer = styled.nav`
     min-height: 465px;
     margin-top: 50px;
 
-    // 520px
-    @media screen and (max-width: 768px) {
-        height: 100px;
-        width: 100%;
-        flex-direction: row;
-        bottom: 0;
+    @media (max-width: 1400px) {
+        display: none;
     }
 `;
 

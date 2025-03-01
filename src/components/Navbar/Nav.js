@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Bars, Nav, NavBtn, NavBtnLink, NavLink, NavMenu, UserProfile} from './NavbarComponents'
-import {useNavigate} from "react-router-dom";
+import {useLocation, useNavigate} from "react-router-dom";
 
 /** Funkce zobrazující navigační panel **/
 function Navbar({toggle}) {
@@ -23,6 +23,14 @@ function Navbar({toggle}) {
     }
 
     const loggedInUser = localStorage.getItem("user");
+
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.pathname === "/ucet") {
+            console.log("Logged in user when on /ucet:", loggedInUser);
+        }
+    }, [location, loggedInUser]);
 
     console.log(loggedInUser);
 
