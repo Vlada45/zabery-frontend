@@ -21,7 +21,7 @@ function AnimatedRoutes(props) {
 
         <AnimatePresence mode="wait">
 
-            <Routes location={location} key={location.pathname}>
+            <Routes>
 
                 <Route path="/" element={<Home setImage={setImage}/>}/>
                 <Route path="/o-projektu" element={<Oprojektu />}/>

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
-import {BrowserRouter as Router} from 'react-router-dom';
+import {BrowserRouter} from 'react-router-dom';
 import Navbar from "./components/Navbar/Nav";
 import Sidebar from "./components/Sidebar";
 import AnimatedRoutes from "./components/AnimatedRoutes/AnimatedRoutes";
@@ -14,7 +14,7 @@ function App() {
 
     return (
 
-        <Router>
+        <BrowserRouter>
 
             <Navbar toggle={toggle}/>
 
@@ -22,7 +22,7 @@ function App() {
 
             <AnimatedRoutes />
 
-        </Router>
+        </BrowserRouter>
 
     );
 }
